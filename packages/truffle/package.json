@@ -18,6 +18,12 @@
     "truffle": "./build/cli.bundled.js"
   },
   "scripts": {
+  "name": "my-package",
+  "scripts": {
+    "build": "babel src -d lib",
+    "test": "jest"
+  }
+}
     "analyze": "./scripts/analyze.sh",
     "build": "yarn build:cli",
     "build:cli": "node --max-old-space-size=8192 ./node_modules/webpack/bin/webpack.js --config ./webpack.config.js",
